@@ -106,8 +106,8 @@
             <id>validate</id>
             <phase>validate</phase>
             <configuration>
-              <configLocation>config/checkstyle/sun_checks.xml</configLocation>
-              <failOnViolation>false</failOnViolation>
+              <configLocation>config/checkstyle/copy_sun_checks.xml</configLocation>
+              <failOnViolation>warning</failOnViolation>
             </configuration>
             <goals>
               <goal>check</goal>
@@ -127,7 +127,7 @@
             <phase>process-classes</phase>
             <configuration>
               <xmlOutput>true</xmlOutput>
-              <failOnError>false</failOnError>
+              <failOnError>warning</failOnError>
             </configuration>
             <goals>
               <goal>check</goal>
